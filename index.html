@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimize My Data</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet">
+    <script>
+        function openModal() {
+            document.getElementById('leadForm').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('leadForm').classList.add('hidden');
+        }
+    </script>
+    <base href="/optimize-my-data/">
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <img src="./logo.png" alt="Optimize My Data Logo" class="h-12 w-auto">
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-orange-500">Home</a>
+                    <a href="#" class="text-gray-600 hover:text-orange-500">About</a>
+                    <a href="#" class="text-gray-600 hover:text-orange-500">Services</a>
+                    <a href="#" class="text-gray-600 hover:text-orange-500">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-r from-orange-400 to-orange-600 text-white">
+        <div class="max-w-6xl mx-auto px-4 py-20">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Welcome to Optimize My Data</h1>
+                <p class="text-xl mb-8">Transform your business with data-driven solutions</p>
+                <button onclick="openModal()" class="bg-white text-orange-500 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition duration-300">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lead Form Modal -->
+    <div id="leadForm" class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full">
+        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+            <div class="mt-3">
+                <h3 class="text-lg font-bold text-gray-900 mb-4">Get Started</h3>
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" required 
+                               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500 p-2 border">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" required 
+                               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500 p-2 border">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Phone Number</label>
+                        <input type="tel" 
+                               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500 p-2 border">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Company</label>
+                        <input type="text" 
+                               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500 p-2 border">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500 p-2 border" 
+                                  rows="3"></textarea>
+                    </div>
+                    <div class="flex justify-between">
+                        <button type="submit" 
+                                class="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600 transition duration-300">
+                            Submit
+                        </button>
+                        <button type="button" 
+                                onclick="closeModal()" 
+                                class="bg-gray-200 text-gray-800 px-4 py-2 rounded-md hover:bg-gray-300 transition duration-300">
+                            Close
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="max-w-6xl mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <div class="text-orange-500 text-4xl mb-4">🎨</div>
+                <h3 class="text-xl font-bold mb-2">Modern Design</h3>
+                <p class="text-gray-600">Clean and modern design principles for the best user experience.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <div class="text-orange-500 text-4xl mb-4">⚡</div>
+                <h3 class="text-xl font-bold mb-2">Fast Performance</h3>
+                <p class="text-gray-600">Optimized for speed and efficient loading times.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <div class="text-orange-500 text-4xl mb-4">📱</div>
+                <h3 class="text-xl font-bold mb-2">Responsive</h3>
+                <p class="text-gray-600">Fully responsive design that works on all devices.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="bg-gray-50 py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Projects</h2>
+                <p class="text-xl text-gray-600">Transforming businesses through data optimization</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-48 bg-orange-100 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3" 
+                             alt="Data Analytics Project" 
+                             class="object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Data Analytics Dashboard</h3>
+                        <p class="text-gray-600 mb-4">Custom analytics solution for real-time business intelligence</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm">Analytics</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm">Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-48 bg-orange-100 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3" 
+                             alt="Data Migration Project" 
+                             class="object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Data Migration Solution</h3>
+                        <p class="text-gray-600 mb-4">Enterprise-scale data migration and optimization</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm">Migration</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm">Enterprise</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-48 bg-orange-100 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3" 
+                             alt="Data Integration Project" 
+                             class="object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Data Integration Platform</h3>
+                        <p class="text-gray-600 mb-4">Seamless integration of multiple data sources</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm">Integration</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm">Platform</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Digital Marketing Card -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-48 bg-orange-100 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1533750516457-a7f992034fec?ixlib=rb-4.0.3" 
+                             alt="Digital Marketing Project" 
+                             class="object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Digital Marketing Analytics</h3>
+                        <p class="text-gray-600 mb-4">Data-driven marketing strategies and campaign optimization</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm">Marketing</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Projects Button -->
+            <div class="text-center mt-12">
+                <button class="bg-orange-500 text-white px-8 py-3 rounded-full font-bold hover:bg-orange-600 transition duration-300">
+                    View All Projects
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-orange-600 text-white">
+        <div class="max-w-6xl mx-auto px-4 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">About Us</h4>
+                    <p class="text-gray-400">Creating amazing web experiences with modern technologies.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Contact</h4>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>info@example.com</li>
+                        <li>+1 234 567 890</li>
+                        <li>123 Street, City, Country</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
