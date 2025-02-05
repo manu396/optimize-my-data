@@ -17,8 +17,32 @@
         }
     </script>
     <base href="/optimize-my-data/">
+    <style>
+        .logo-container {
+            position: fixed;
+            top: 25px;
+            left: 30px;
+            z-index: 9999;
+        }
+        
+        .logo {
+            width: 180px;
+            height: auto;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        
+        .logo:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
+    <div class="logo-container">
+        <img src="https://raw.githubusercontent.com/manu396/optimize-my-data/main/logo.png" 
+             alt="Optimize My Data - Data is everything" 
+             class="logo">
+    </div>
     <!-- Navigation -->
     <nav class="bg-white shadow-lg">
         <div class="max-w-6xl mx-auto px-4">
